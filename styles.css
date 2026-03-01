@@ -77,6 +77,53 @@ body {
   background: linear-gradient(to bottom, rgba(9, 8, 8, 0.64), rgba(9, 8, 8, 0));
 }
 
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.8rem, 2vw, 1.4rem);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.48rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.brand-mark {
+  position: relative;
+  width: 1.7rem;
+  height: 1rem;
+}
+
+.brand-mark::before,
+.brand-mark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 1.4px solid rgba(255, 255, 255, 0.94);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.brand-mark::before {
+  left: 0;
+}
+
+.brand-mark::after {
+  left: 0.62rem;
+}
+
+.brand-name {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  white-space: nowrap;
+}
+
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -193,6 +240,11 @@ h1 {
     flex-direction: column;
   }
 
+  .topbar-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
   .language-switcher {
     align-self: flex-end;
   }
@@ -204,6 +256,12 @@ h1 {
 }
 
 @media (max-width: 520px) {
+  .topbar-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+
   .menu {
     gap: 0.5rem;
   }
