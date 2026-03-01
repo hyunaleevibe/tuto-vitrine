@@ -30,10 +30,18 @@ body {
   position: fixed;
   inset: 0;
   z-index: -3;
-  background-image: url('https://images.unsplash.com/photo-1504197885-609741792ce7?auto=format&fit=crop&w=1900&q=80');
+  background:
+    linear-gradient(90deg, rgba(230, 52, 43, 0.92) 0 9%, transparent 9% 100%),
+    linear-gradient(180deg, rgba(246, 198, 53, 0.92) 0 12%, transparent 12% 100%),
+    linear-gradient(90deg, transparent 0 58%, rgba(25, 82, 195, 0.9) 58% 69%, transparent 69% 100%),
+    linear-gradient(180deg, transparent 0 62%, rgba(238, 238, 236, 0.92) 62% 76%, transparent 76% 100%),
+    radial-gradient(circle at 82% 24%, rgba(102, 220, 255, 0.3), transparent 35%),
+    radial-gradient(circle at 20% 84%, rgba(255, 255, 255, 0.16), transparent 33%),
+    linear-gradient(140deg, #0b0f18 0%, #0e1320 46%, #111318 100%);
   background-size: cover;
   background-position: center;
-  transform: scale(1.04);
+  transform: scale(1.015);
+  animation: drift 18s ease-in-out infinite alternate;
 }
 
 .overlay {
@@ -41,9 +49,18 @@ body {
   inset: 0;
   z-index: -2;
   background:
-    radial-gradient(circle at 15% 20%, rgba(171, 106, 76, 0.26), transparent 38%),
-    radial-gradient(circle at 80% 70%, rgba(21, 80, 96, 0.3), transparent 42%),
-    linear-gradient(135deg, rgba(4, 4, 8, 0.74), rgba(6, 8, 11, 0.56));
+    linear-gradient(90deg, rgba(12, 14, 18, 0.28), rgba(12, 14, 18, 0.28)),
+    linear-gradient(135deg, rgba(6, 7, 10, 0.58), rgba(6, 7, 10, 0.44));
+}
+
+@keyframes drift {
+  from {
+    transform: scale(1.015) translateY(0);
+  }
+
+  to {
+    transform: scale(1.03) translateY(-0.6%);
+  }
 }
 
 .topbar {
