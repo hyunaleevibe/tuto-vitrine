@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallel Archive | Paris Art Gallery Museum</title>
+    <meta
+      name="description"
+      content="Parallel Archive is a Paris-based art gallery museum championing young independent artists from Paris, Berlin, and around the world."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hero-bg" role="img" aria-label="Contemporary art installation background"></div>
+    <div class="overlay"></div>
+
+    <header class="topbar">
+      <nav class="menu" aria-label="Main Navigation">
+        <a href="#current-event" data-i18n="menuCurrentEvent">Current Event</a>
+        <a href="#artists" data-i18n="menuArtists">Artists</a>
+        <a href="#reservation" data-i18n="menuReservation">Reservation</a>
+        <a href="#contact" data-i18n="menuContact">Contact</a>
+      </nav>
+
+      <div class="language-switcher" aria-label="Language selector">
+        <button class="lang-btn is-active" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="fr" type="button">FR</button>
+        <button class="lang-btn" data-lang="de" type="button">DE</button>
+      </div>
+    </header>
+
+    <main class="hero-content">
+      <p class="eyebrow" data-i18n="eyebrow">Paris Art Gallery Museum</p>
+      <h1 data-i18n="title">Parallel Archive</h1>
+      <p class="lead" data-i18n="lead">
+        In the 11th arrondissement of Paris, Parallel Archive brings together independent young artists from around the world, with a pulse centered on Paris and Berlin.
+      </p>
+      <p class="description" data-i18n="description">
+        Founded by a collector devoted to modern fashion culture, provocative aesthetics, and future-facing forms, the museum is both an exhibition space and a platform.
+        We present and sell bold contemporary works that explore sensuality, movement, and new identities in urban life.
+      </p>
+      <p class="meta" data-i18n="meta">Independent. Young. Futuristic. Modern.</p>
+    </main>
+
+    <section id="current-event" class="anchor"></section>
+    <section id="artists" class="anchor"></section>
+    <section id="reservation" class="anchor"></section>
+    <section id="contact" class="anchor"></section>
+
+    <script>
+      const translations = {
+        en: {
+          menuCurrentEvent: "Current Event",
+          menuArtists: "Artists",
+          menuReservation: "Reservation",
+          menuContact: "Contact",
+          eyebrow: "Paris Art Gallery Museum",
+          title: "Parallel Archive",
+          lead: "In the 11th arrondissement of Paris, Parallel Archive brings together independent young artists from around the world, with a pulse centered on Paris and Berlin.",
+          description:
+            "Founded by a collector devoted to modern fashion culture, provocative aesthetics, and future-facing forms, the museum is both an exhibition space and a platform. We present and sell bold contemporary works that explore sensuality, movement, and new identities in urban life.",
+          meta: "Independent. Young. Futuristic. Modern.",
+        },
+        fr: {
+          menuCurrentEvent: "Exposition en cours",
+          menuArtists: "Artistes",
+          menuReservation: "Reservation",
+          menuContact: "Contact",
+          eyebrow: "Musee Galerie d'Art a Paris",
+          title: "Parallel Archive",
+          lead: "Dans le 11e arrondissement de Paris, Parallel Archive rassemble de jeunes artistes independants du monde entier, avec une energie ancree entre Paris et Berlin.",
+          description:
+            "Fonde par un collectionneur passionne de culture mode contemporaine, d'esthetiques provocantes et de formes tournees vers le futur, le musee est a la fois espace d'exposition et plateforme. Nous presentons et vendons des oeuvres audacieuses qui explorent la sensualite, le mouvement et de nouvelles identites urbaines.",
+          meta: "Independant. Jeune. Futuriste. Moderne.",
+        },
+        de: {
+          menuCurrentEvent: "Aktuelle Ausstellung",
+          menuArtists: "Kuenstler",
+          menuReservation: "Reservierung",
+          menuContact: "Kontakt",
+          eyebrow: "Kunstgalerie-Museum in Paris",
+          title: "Parallel Archive",
+          lead: "Im 11. Arrondissement von Paris vereint Parallel Archive junge unabhaengige Kuenstler aus aller Welt, mit einem Schwerpunkt auf Paris und Berlin.",
+          description:
+            "Gegruendet von einem Sammler mit Leidenschaft fuer moderne Modekultur, provokante Aesthetik und zukunftsorientierte Formen, ist das Museum zugleich Ausstellungsraum und Plattform. Wir zeigen und verkaufen mutige zeitgenoessische Werke, die Sinnlichkeit, Bewegung und neue urbane Identitaeten erkunden.",
+          meta: "Unabhaengig. Jung. Futuristisch. Modern.",
+        },
+      };
+
+      const langButtons = document.querySelectorAll('.lang-btn');
+      const translatable = document.querySelectorAll('[data-i18n]');
+
+      function setLanguage(lang) {
+        const dict = translations[lang];
+        if (!dict) return;
+
+        translatable.forEach((el) => {
+          const key = el.dataset.i18n;
+          if (dict[key]) el.textContent = dict[key];
+        });
+
+        langButtons.forEach((btn) => {
+          btn.classList.toggle('is-active', btn.dataset.lang === lang);
+        });
+
+        document.documentElement.lang = lang;
+      }
+
+      langButtons.forEach((btn) => {
+        btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+      });
+    </script>
+  </body>
+</html>
