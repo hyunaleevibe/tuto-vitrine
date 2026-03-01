@@ -148,12 +148,11 @@ body {
 }
 
 h1 {
+  font-family: 'Instrument Serif', serif;
   font-size: clamp(2.4rem, 9vw, 5.8rem);
-  font-weight: 300;
-  font-stretch: 90%;
-  font-variation-settings: 'wdth' 90;
-  letter-spacing: 0.01em;
-  line-height: 0.96;
+  font-weight: 400;
+  letter-spacing: 0.008em;
+  line-height: 1.2;
   margin: 0;
   text-wrap: balance;
 }
