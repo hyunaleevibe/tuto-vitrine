@@ -265,20 +265,24 @@ h1 {
 }
 
 .circle-board {
+  --circle-size: clamp(210px, 30vw, 310px);
+  --circle-gap: 300px;
   position: relative;
   margin: 1rem auto 0;
-  width: fit-content;
+  width: calc((var(--circle-size) * 2) + var(--circle-gap));
   min-height: 400px;
-  display: flex;
+  display: grid;
+  grid-template-columns: var(--circle-size) var(--circle-size);
+  column-gap: var(--circle-gap);
   justify-content: center;
   align-items: center;
-  gap: 300px;
+  justify-self: center;
   transform: none;
 }
 
 .info-circle {
   position: relative;
-  width: clamp(210px, 30vw, 310px);
+  width: var(--circle-size);
   aspect-ratio: 1 / 1;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.34);
@@ -373,8 +377,8 @@ h1 {
   }
 
   .circle-board {
+    --circle-gap: 140px;
     min-height: 360px;
-    gap: 140px;
     transform: none;
   }
 }
@@ -404,13 +408,14 @@ h1 {
   }
 
   .circle-board {
+    --circle-size: min(210px, 46vw);
+    --circle-gap: 36px;
     transform: none;
     min-height: 320px;
-    gap: 36px;
   }
 
   .info-circle {
-    width: min(210px, 46vw);
+    width: var(--circle-size);
   }
 
   .info-circle-small {
