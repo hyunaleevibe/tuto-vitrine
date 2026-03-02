@@ -31,17 +31,17 @@ body {
   inset: 0;
   z-index: -3;
   background:
-    linear-gradient(90deg, rgba(230, 52, 43, 0.92) 0 9%, transparent 9% 100%),
-    linear-gradient(180deg, rgba(246, 198, 53, 0.92) 0 12%, transparent 12% 100%),
-    linear-gradient(90deg, transparent 0 58%, rgba(25, 82, 195, 0.9) 58% 69%, transparent 69% 100%),
-    linear-gradient(180deg, transparent 0 62%, rgba(238, 238, 236, 0.92) 62% 76%, transparent 76% 100%),
-    radial-gradient(circle at 82% 24%, rgba(102, 220, 255, 0.3), transparent 35%),
-    radial-gradient(circle at 20% 84%, rgba(255, 255, 255, 0.16), transparent 33%),
-    linear-gradient(140deg, #0b0f18 0%, #0e1320 46%, #111318 100%);
+    radial-gradient(circle at 16% 28%, rgba(255, 101, 87, 0.6) 0 18%, transparent 19%),
+    radial-gradient(circle at 80% 18%, rgba(78, 172, 255, 0.55) 0 16%, transparent 17%),
+    radial-gradient(circle at 72% 80%, rgba(255, 214, 102, 0.58) 0 21%, transparent 22%),
+    radial-gradient(circle at 30% 74%, rgba(134, 255, 203, 0.34) 0 14%, transparent 15%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0 1px, transparent 1px 78px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.07) 0 1px, transparent 1px 78px),
+    linear-gradient(140deg, #11192b 0%, #151f34 50%, #1a2030 100%);
   background-size: cover;
   background-position: center;
   transform: scale(1.015);
-  animation: drift 18s ease-in-out infinite alternate;
+  animation: drift 24s ease-in-out infinite alternate;
 }
 
 .overlay {
@@ -49,8 +49,8 @@ body {
   inset: 0;
   z-index: -2;
   background:
-    linear-gradient(90deg, rgba(12, 14, 18, 0.28), rgba(12, 14, 18, 0.28)),
-    linear-gradient(135deg, rgba(6, 7, 10, 0.58), rgba(6, 7, 10, 0.44));
+    radial-gradient(circle at 50% 50%, rgba(10, 12, 18, 0.16), rgba(6, 8, 12, 0.56)),
+    linear-gradient(135deg, rgba(8, 10, 14, 0.52), rgba(8, 10, 14, 0.36));
 }
 
 @keyframes drift {
@@ -182,7 +182,7 @@ body {
   display: grid;
   align-content: center;
   gap: 1rem;
-  width: min(900px, 95vw);
+  width: min(980px, 96vw);
   margin: 0;
 }
 
@@ -204,30 +204,62 @@ h1 {
   text-wrap: balance;
 }
 
-.lead,
-.description,
-.meta {
-  margin: 0;
-  max-width: 62ch;
-}
-
 .lead {
+  margin: 0;
+  max-width: 52ch;
   font-size: clamp(1rem, 1.6vw, 1.25rem);
-  font-weight: 400;
-  line-height: 1.78;
+  font-weight: 500;
+  line-height: 1.56;
 }
 
-.description {
-  font-size: clamp(0.95rem, 1.35vw, 1.05rem);
-  line-height: 1.86;
-  color: var(--muted);
+.circle-board {
+  position: relative;
+  margin-top: 1rem;
+  width: min(780px, 92vw);
+  min-height: 460px;
+  transform: rotate(8deg);
+  transform-origin: 20% 30%;
 }
 
-.meta {
-  font-size: 0.84rem;
+.info-circle {
+  position: absolute;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  background: rgba(10, 14, 22, 0.48);
+  backdrop-filter: blur(2px);
+  padding: clamp(1.3rem, 3vw, 2rem);
+  display: grid;
+  align-content: center;
+  gap: 0.7rem;
+}
+
+.info-circle-large {
+  width: clamp(260px, 52vw, 460px);
+  aspect-ratio: 1 / 1;
+  left: 0;
+  top: 0;
+}
+
+.info-circle-small {
+  width: clamp(130px, 26vw, 230px);
+  aspect-ratio: 1 / 1;
+  right: clamp(0.5rem, 6vw, 5rem);
+  bottom: 1rem;
+}
+
+.circle-label {
+  margin: 0;
+  font-size: 0.76rem;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  margin-top: 0.2rem;
+  letter-spacing: 0.13em;
+  color: #f5ecd6;
+}
+
+.circle-copy {
+  margin: 0;
+  font-size: clamp(0.84rem, 1.2vw, 1rem);
+  line-height: 1.4;
+  color: #f4f3ee;
 }
 
 .anchor {
@@ -253,6 +285,10 @@ h1 {
     width: min(650px, 100%);
     padding-top: 9rem;
   }
+
+  .circle-board {
+    min-height: 420px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -273,5 +309,20 @@ h1 {
 
   .hero-content {
     padding-top: 9.7rem;
+  }
+
+  .circle-board {
+    transform: rotate(5deg);
+    min-height: 390px;
+  }
+
+  .info-circle-large {
+    width: min(300px, 78vw);
+  }
+
+  .info-circle-small {
+    width: min(150px, 40vw);
+    right: 0;
+    bottom: 0;
   }
 }
