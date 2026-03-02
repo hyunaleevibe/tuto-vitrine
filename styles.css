@@ -228,7 +228,7 @@ body {
   display: grid;
   align-content: center;
   justify-items: center;
-  gap: 2.2rem;
+  gap: 6.6rem;
   width: min(1300px, 96vw);
   margin: 0 auto;
 }
@@ -260,7 +260,7 @@ h1 {
 }
 
 .intro-copy {
-  margin-top: 1.4rem;
+  margin-top: 4.2rem;
   display: grid;
   justify-items: center;
   text-align: center;
@@ -272,7 +272,7 @@ h1 {
   --circle-size: clamp(280px, 30vw, 420px);
   --circle-gap: 80px;
   position: relative;
-  margin-top: 1.6rem;
+  margin-top: 4.8rem;
   width: min(1400px, 100%);
   min-height: 400px;
   display: grid;
