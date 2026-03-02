@@ -269,7 +269,7 @@ h1 {
 }
 
 .circle-board {
-  --circle-size: clamp(210px, 30vw, 310px);
+  --circle-size: clamp(260px, 34vw, 380px);
   --circle-gap: 200px;
   position: relative;
   margin-top: 1rem;
@@ -411,7 +411,7 @@ h1 {
   }
 
   .circle-board {
-    --circle-size: min(210px, 46vw);
+    --circle-size: min(240px, 47vw);
     --circle-gap: 22px;
     min-height: 320px;
     grid-template-columns: var(--circle-size) var(--circle-gap) var(--circle-size);
