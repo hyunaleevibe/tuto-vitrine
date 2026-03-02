@@ -272,7 +272,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: clamp(0.6rem, 2vw, 1.4rem);
+  gap: 400px;
   transform: rotate(8deg);
   transform-origin: 50% 50%;
 }
@@ -375,6 +375,7 @@ h1 {
 
   .circle-board {
     min-height: 360px;
+    gap: 140px;
     transform: rotate(6deg);
   }
 }
@@ -406,7 +407,7 @@ h1 {
   .circle-board {
     transform: rotate(5deg);
     min-height: 320px;
-    gap: 0.35rem;
+    gap: 42px;
   }
 
   .info-circle {
