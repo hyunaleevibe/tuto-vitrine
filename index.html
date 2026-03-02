@@ -157,6 +157,40 @@
       langButtons.forEach((btn) => {
         btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
       });
+
+      const root = document.documentElement;
+      let scrollTicking = false;
+
+      function updateScrollRgb() {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+        const progress = Math.min(1, scrollTop / maxScroll);
+
+        const hue = -8 + progress * 96;
+        const saturation = 1 + progress * 0.52;
+        const contrast = 1 + progress * 0.3;
+        const overlay = 0.38 + progress * 0.2;
+
+        root.style.setProperty('--bg-hue-shift', `${hue.toFixed(2)}deg`);
+        root.style.setProperty('--bg-sat', saturation.toFixed(3));
+        root.style.setProperty('--bg-contrast', contrast.toFixed(3));
+        root.style.setProperty('--overlay-alpha', overlay.toFixed(3));
+        scrollTicking = false;
+      }
+
+      window.addEventListener(
+        'scroll',
+        () => {
+          if (!scrollTicking) {
+            window.requestAnimationFrame(updateScrollRgb);
+            scrollTicking = true;
+          }
+        },
+        { passive: true }
+      );
+
+      window.addEventListener('resize', updateScrollRgb);
+      updateScrollRgb();
     </script>
   </body>
 </html>

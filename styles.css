@@ -7,6 +7,10 @@
   --button-hover: rgba(255, 255, 255, 0.26);
   --button-active: #fff;
   --button-active-text: #111;
+  --bg-hue-shift: 0deg;
+  --bg-sat: 1;
+  --bg-contrast: 1;
+  --overlay-alpha: 0.42;
 }
 
 * {
@@ -31,16 +35,13 @@ body {
   inset: 0;
   z-index: -3;
   background:
-    radial-gradient(circle at 16% 28%, rgba(255, 101, 87, 0.6) 0 18%, transparent 19%),
-    radial-gradient(circle at 80% 18%, rgba(78, 172, 255, 0.55) 0 16%, transparent 17%),
-    radial-gradient(circle at 72% 80%, rgba(255, 214, 102, 0.58) 0 21%, transparent 22%),
-    radial-gradient(circle at 30% 74%, rgba(134, 255, 203, 0.34) 0 14%, transparent 15%),
-    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0 1px, transparent 1px 78px),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.07) 0 1px, transparent 1px 78px),
-    linear-gradient(140deg, #11192b 0%, #151f34 50%, #1a2030 100%);
+    radial-gradient(ellipse 42% 34% at 60% 54%, rgba(137, 255, 255, 0.86) 0%, rgba(179, 228, 255, 0.58) 45%, rgba(189, 208, 255, 0.28) 60%, rgba(255, 0, 126, 0) 78%),
+    radial-gradient(ellipse 170% 130% at 48% 46%, #bf005f 0%, #a10053 50%, #8a0048 100%);
   background-size: cover;
-  background-position: center;
-  transform: scale(1.015);
+  background-position: center center;
+  transform: scale(1.02);
+  filter: hue-rotate(var(--bg-hue-shift)) saturate(var(--bg-sat)) contrast(var(--bg-contrast));
+  transition: filter 120ms linear;
   animation: drift 24s ease-in-out infinite alternate;
 }
 
@@ -49,8 +50,7 @@ body {
   inset: 0;
   z-index: -2;
   background:
-    radial-gradient(circle at 50% 50%, rgba(10, 12, 18, 0.16), rgba(6, 8, 12, 0.56)),
-    linear-gradient(135deg, rgba(8, 10, 14, 0.52), rgba(8, 10, 14, 0.36));
+    linear-gradient(135deg, rgba(3, 4, 8, var(--overlay-alpha)), rgba(9, 2, 14, calc(var(--overlay-alpha) + 0.08)));
 }
 
 .center-emblem {
@@ -353,7 +353,7 @@ h1 {
 }
 
 .anchor {
-  height: 0;
+  height: 34vh;
 }
 
 @media (max-width: 800px) {
