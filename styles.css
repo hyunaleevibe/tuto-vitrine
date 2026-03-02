@@ -215,36 +215,41 @@ h1 {
 .circle-board {
   position: relative;
   margin-top: 1rem;
-  width: min(780px, 92vw);
-  min-height: 460px;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.6rem, 2vw, 1.4rem);
   transform: rotate(8deg);
-  transform-origin: 20% 30%;
+  transform-origin: 50% 50%;
 }
 
 .info-circle {
-  position: absolute;
+  position: relative;
+  width: clamp(200px, 28vw, 300px);
+  aspect-ratio: 1 / 1;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.34);
   background: rgba(10, 14, 22, 0.48);
   backdrop-filter: blur(2px);
   padding: clamp(1.3rem, 3vw, 2rem);
-  display: grid;
-  align-content: center;
-  gap: 0.7rem;
-}
-
-.info-circle-large {
-  width: clamp(260px, 52vw, 460px);
-  aspect-ratio: 1 / 1;
-  left: 0;
-  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .info-circle-small {
-  width: clamp(130px, 26vw, 230px);
-  aspect-ratio: 1 / 1;
-  right: clamp(0.5rem, 6vw, 5rem);
-  bottom: 1rem;
+  margin-left: clamp(-1.4rem, -2vw, -0.5rem);
+}
+
+.circle-inner {
+  display: grid;
+  gap: 0.7rem;
+  text-align: center;
+  transform-origin: 50% 50%;
+  animation: text-roll 24s linear infinite;
 }
 
 .circle-label {
@@ -260,6 +265,16 @@ h1 {
   font-size: clamp(0.84rem, 1.2vw, 1rem);
   line-height: 1.4;
   color: #f4f3ee;
+}
+
+@keyframes text-roll {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .anchor {
@@ -287,7 +302,8 @@ h1 {
   }
 
   .circle-board {
-    min-height: 420px;
+    min-height: 360px;
+    transform: rotate(6deg);
   }
 }
 
@@ -313,16 +329,15 @@ h1 {
 
   .circle-board {
     transform: rotate(5deg);
-    min-height: 390px;
+    min-height: 320px;
+    gap: 0.35rem;
   }
 
-  .info-circle-large {
-    width: min(300px, 78vw);
+  .info-circle {
+    width: min(190px, 44vw);
   }
 
   .info-circle-small {
-    width: min(150px, 40vw);
-    right: 0;
-    bottom: 0;
+    margin-left: -0.5rem;
   }
 }
