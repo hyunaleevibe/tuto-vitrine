@@ -53,6 +53,57 @@ body {
     linear-gradient(135deg, rgba(8, 10, 14, 0.52), rgba(8, 10, 14, 0.36));
 }
 
+.center-emblem {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.34rem 0.62rem;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 999px;
+  background: rgba(6, 7, 12, 0.52);
+  backdrop-filter: blur(2px);
+  pointer-events: none;
+}
+
+.center-emblem-mark {
+  position: relative;
+  width: 1.25rem;
+  height: 0.78rem;
+}
+
+.center-emblem-mark::before,
+.center-emblem-mark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 0.72rem;
+  height: 0.72rem;
+  border: 1.2px solid rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.center-emblem-mark::before {
+  left: 0;
+}
+
+.center-emblem-mark::after {
+  left: 0.48rem;
+}
+
+.center-emblem-text {
+  font-family: 'Instrument Serif', serif;
+  font-size: 0.95rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
 @keyframes drift {
   from {
     transform: scale(1.015) translateY(0);
@@ -317,6 +368,10 @@ h1 {
     padding-top: 9rem;
   }
 
+  .center-emblem {
+    transform: translate(-50%, -50%) scale(0.92);
+  }
+
   .circle-board {
     min-height: 360px;
     transform: rotate(6deg);
@@ -341,6 +396,10 @@ h1 {
 
   .hero-content {
     padding-top: 9.7rem;
+  }
+
+  .center-emblem {
+    transform: translate(-50%, -50%) scale(0.84);
   }
 
   .circle-board {
