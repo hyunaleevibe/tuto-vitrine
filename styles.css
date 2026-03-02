@@ -231,9 +231,7 @@ h1 {
   aspect-ratio: 1 / 1;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.34);
-  background: rgba(10, 14, 22, 0.48);
-  backdrop-filter: blur(2px);
-  padding: clamp(1.3rem, 3vw, 2rem);
+  background: rgba(10, 14, 22, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,14 +242,24 @@ h1 {
   margin-left: clamp(-1.4rem, -2vw, -0.5rem);
 }
 
-.circle-inner {
-  display: grid;
-  gap: 0.7rem;
-  text-align: center;
-  width: min(82%, 21ch);
-  margin: 0 auto;
+.orbit-text-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.orbit-svg {
+  width: 100%;
+  height: 100%;
   transform-origin: 50% 50%;
-  animation: text-roll 14s linear infinite;
+  animation: text-roll 24s linear infinite;
+}
+
+.orbit-text {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(24px, 3.2vw, 56px);
+  fill: #f6f3ef;
+  letter-spacing: 0.01em;
 }
 
 .circle-label {
@@ -262,32 +270,26 @@ h1 {
   color: #f5ecd6;
 }
 
-.circle-copy {
-  margin: 0;
-  font-size: clamp(0.78rem, 1.05vw, 0.92rem);
-  line-height: 1.34;
-  color: #f4f3ee;
+.circle-center-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #050505;
+  color: #ffffff;
+  padding: 0.28rem 0.68rem;
+  font-size: clamp(0.76rem, 1vw, 1rem);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 
 @keyframes text-roll {
-  0% {
-    transform: translate(0, 0);
+  from {
+    transform: rotate(0deg);
   }
 
-  25% {
-    transform: translate(4px, -3px);
-  }
-
-  50% {
-    transform: translate(0, -6px);
-  }
-
-  75% {
-    transform: translate(-4px, -3px);
-  }
-
-  100% {
-    transform: translate(0, 0);
+  to {
+    transform: rotate(360deg);
   }
 }
 

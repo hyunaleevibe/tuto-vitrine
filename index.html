@@ -50,19 +50,33 @@
 
       <div class="circle-board" aria-label="Gallery highlights">
         <article class="info-circle info-circle-large">
-          <div class="circle-inner">
-            <p class="circle-label" data-i18n="aboutLabel">About Gallery</p>
-            <p class="circle-copy" data-i18n="aboutText">
-              Young independent artists from Paris and Berlin.
-            </p>
+          <div class="orbit-text-wrap">
+            <svg class="orbit-svg" viewBox="0 0 320 320" aria-hidden="true">
+              <defs>
+                <path id="aboutOrbitPath" d="M160,160 m-118,0 a118,118 0 1,1 236,0 a118,118 0 1,1 -236,0" />
+              </defs>
+              <text class="orbit-text">
+                <textPath id="aboutOrbitText" href="#aboutOrbitPath" startOffset="50%" text-anchor="middle" data-i18n="aboutOrbit">
+                  Young independent artists from Paris and Berlin.
+                </textPath>
+              </text>
+            </svg>
+            <p class="circle-label circle-center-label" data-i18n="aboutLabel">About Gallery</p>
           </div>
         </article>
         <article class="info-circle info-circle-small">
-          <div class="circle-inner">
-            <p class="circle-label" data-i18n="eventLabel">Current Exhibition</p>
-            <p class="circle-copy" data-i18n="eventText">
-              Soft Voltage: new media works in rotation.
-            </p>
+          <div class="orbit-text-wrap">
+            <svg class="orbit-svg" viewBox="0 0 320 320" aria-hidden="true">
+              <defs>
+                <path id="eventOrbitPath" d="M160,160 m-118,0 a118,118 0 1,1 236,0 a118,118 0 1,1 -236,0" />
+              </defs>
+              <text class="orbit-text">
+                <textPath id="eventOrbitText" href="#eventOrbitPath" startOffset="50%" text-anchor="middle" data-i18n="eventOrbit">
+                  Soft Voltage: new media works in rotation.
+                </textPath>
+              </text>
+            </svg>
+            <p class="circle-label circle-center-label" data-i18n="eventLabel">Current Event</p>
           </div>
         </article>
       </div>
@@ -84,9 +98,9 @@
           title: "Parallel Archive",
           lead: "A playful museum for independent voices from Paris, Berlin, and beyond.",
           aboutLabel: "About Gallery",
-          aboutText: "Young independent artists from Paris and Berlin.",
-          eventLabel: "Current Exhibition",
-          eventText: "Soft Voltage: new media works in rotation.",
+          aboutOrbit: "Young independent artists from Paris and Berlin.",
+          eventLabel: "Current Event",
+          eventOrbit: "Soft Voltage: new media works in rotation.",
         },
         fr: {
           menuCurrentEvent: "Exposition en cours",
@@ -97,9 +111,9 @@
           title: "Parallel Archive",
           lead: "Un musee ludique pour les voix independantes de Paris, Berlin et d'ailleurs.",
           aboutLabel: "A propos de la galerie",
-          aboutText: "Jeunes artistes independants de Paris et Berlin.",
+          aboutOrbit: "Jeunes artistes independants de Paris et Berlin.",
           eventLabel: "Exposition en cours",
-          eventText: "Soft Voltage: oeuvres new media en rotation.",
+          eventOrbit: "Soft Voltage: oeuvres new media en rotation.",
         },
         de: {
           menuCurrentEvent: "Aktuelle Ausstellung",
@@ -110,9 +124,9 @@
           title: "Parallel Archive",
           lead: "Ein spielerisches Museum fuer unabhaengige Stimmen aus Paris, Berlin und darueber hinaus.",
           aboutLabel: "Ueber die Galerie",
-          aboutText: "Junge unabhaengige Kuenstler aus Paris und Berlin.",
+          aboutOrbit: "Junge unabhaengige Kuenstler aus Paris und Berlin.",
           eventLabel: "Aktuelle Ausstellung",
-          eventText: "Soft Voltage: rotierende New-Media-Arbeiten.",
+          eventOrbit: "Soft Voltage: rotierende New-Media-Arbeiten.",
         },
       };
 
