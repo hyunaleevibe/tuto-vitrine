@@ -269,14 +269,14 @@ h1 {
 }
 
 .circle-board {
-  --circle-size: clamp(260px, 34vw, 380px);
-  --circle-gap: 200px;
+  --circle-size: clamp(220px, 28vw, 320px);
+  --circle-gap: 100px;
   position: relative;
   margin-top: 1rem;
-  width: 100%;
+  width: min(1400px, 100%);
   min-height: 400px;
   display: grid;
-  grid-template-columns: 1fr var(--circle-size) var(--circle-gap) var(--circle-size) 1fr;
+  grid-template-columns: minmax(80px, 1fr) var(--circle-size) var(--circle-gap) var(--circle-size) minmax(80px, 1fr);
   align-items: center;
 }
 
@@ -381,7 +381,7 @@ h1 {
   }
 
   .circle-board {
-    --circle-gap: 72px;
+    --circle-gap: 48px;
     min-height: 360px;
   }
 }
@@ -411,7 +411,7 @@ h1 {
   }
 
   .circle-board {
-    --circle-size: min(240px, 47vw);
+    --circle-size: min(190px, 43vw);
     --circle-gap: 22px;
     min-height: 320px;
     grid-template-columns: var(--circle-size) var(--circle-gap) var(--circle-size);
