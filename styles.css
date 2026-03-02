@@ -229,7 +229,7 @@ body {
   align-content: center;
   gap: 1rem;
   width: min(980px, 96vw);
-  margin: 0;
+  margin: 0 auto;
 }
 
 .eyebrow {
@@ -266,8 +266,8 @@ h1 {
 
 .circle-board {
   position: relative;
-  margin-top: 1rem;
-  width: 100%;
+  margin: 1rem auto 0;
+  width: fit-content;
   min-height: 400px;
   display: flex;
   justify-content: center;
