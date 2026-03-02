@@ -272,7 +272,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 400px;
+  gap: 300px;
   transform: none;
 }
 
@@ -290,7 +290,7 @@ h1 {
 }
 
 .info-circle-small {
-  margin-left: clamp(-1.4rem, -2vw, -0.5rem);
+  margin-left: 0;
 }
 
 .orbit-text-wrap {
@@ -406,7 +406,7 @@ h1 {
   .circle-board {
     transform: none;
     min-height: 320px;
-    gap: 42px;
+    gap: 36px;
   }
 
   .info-circle {
@@ -414,6 +414,6 @@ h1 {
   }
 
   .info-circle-small {
-    margin-left: -0.5rem;
+    margin-left: 0;
   }
 }
