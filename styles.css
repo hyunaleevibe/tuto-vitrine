@@ -268,16 +268,14 @@ h1 {
   --circle-size: clamp(210px, 30vw, 310px);
   --circle-gap: 300px;
   position: relative;
-  margin: 1rem auto 0;
-  width: calc((var(--circle-size) * 2) + var(--circle-gap));
+  left: 50%;
+  margin-top: 1rem;
+  width: max-content;
   min-height: 400px;
-  display: grid;
-  grid-template-columns: var(--circle-size) var(--circle-size);
-  column-gap: var(--circle-gap);
-  justify-content: center;
+  display: flex;
+  gap: var(--circle-gap);
   align-items: center;
-  justify-self: center;
-  transform: none;
+  transform: translateX(-50%);
 }
 
 .info-circle {
