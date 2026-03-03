@@ -415,7 +415,8 @@ h1 {
   padding: 0.5rem;
 }
 
-.event-card img {
+.event-card img,
+.event-card .event-media {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
