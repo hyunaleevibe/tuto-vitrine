@@ -377,8 +377,8 @@ h1 {
 .current-event-section {
   position: relative;
   z-index: 4;
-  background: linear-gradient(180deg, rgba(247, 243, 240, 0.96), rgba(241, 236, 232, 0.94));
-  color: #151313;
+  background: transparent;
+  color: var(--text);
   padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 4rem) clamp(3rem, 8vw, 6rem);
 }
 
@@ -411,8 +411,8 @@ h1 {
 }
 
 .event-card {
-  background: #fff;
-  padding: 0.5rem;
+  background: transparent;
+  padding: 0;
 }
 
 .event-card img,
