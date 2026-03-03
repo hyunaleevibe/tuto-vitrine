@@ -44,27 +44,23 @@ body {
   animation: drift 24s ease-in-out infinite alternate;
 }
 
-.hero-bg::before,
-.hero-bg::after {
-  content: '';
+.bg-ellipse {
   position: absolute;
-  top: 8vh;
-  width: min(34vw, 500px);
-  height: min(74vh, 900px);
-  background-image: linear-gradient(180deg, rgba(243, 134, 142, 0.74) 0%, rgba(245, 236, 173, 0.9) 100%);
-  border-radius: 50%;
+  top: -4%;
+  width: min(71.3vw, 1027px);
+  height: min(54vh, 553px);
+  object-fit: cover;
   filter: blur(8.6px);
-  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  transform: rotate(90deg);
   transform-origin: center;
 }
 
-.hero-bg::before {
-  left: 21%;
+.bg-ellipse-a {
+  left: 14.8%;
 }
 
-.hero-bg::after {
-  left: 52%;
+.bg-ellipse-b {
+  left: 46.8%;
 }
 
 .overlay {
