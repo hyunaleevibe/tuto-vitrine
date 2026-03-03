@@ -51,16 +51,17 @@ body {
   height: min(54vh, 553px);
   object-fit: cover;
   filter: blur(8.6px);
-  transform: rotate(90deg);
   transform-origin: center;
 }
 
 .bg-ellipse-a {
-  left: 14.8%;
+  left: 50%;
+  transform: translateX(calc(-100% + 46px)) rotate(90deg);
 }
 
 .bg-ellipse-b {
-  left: 46.8%;
+  left: 50%;
+  transform: translateX(-46px) rotate(90deg);
 }
 
 .overlay {
