@@ -35,7 +35,8 @@ body {
   inset: 0;
   z-index: -3;
   background:
-    radial-gradient(ellipse 42% 34% at 60% 54%, rgba(137, 255, 255, 0.86) 0%, rgba(179, 228, 255, 0.58) 45%, rgba(189, 208, 255, 0.28) 60%, rgba(255, 0, 126, 0) 78%),
+    radial-gradient(ellipse 18% 22% at 87% 54%, rgba(205, 255, 255, 0.88) 0%, rgba(177, 255, 255, 0.7) 52%, rgba(160, 240, 255, 0.26) 60%, rgba(255, 0, 126, 0) 64%),
+    radial-gradient(ellipse 45% 35% at 58% 54%, rgba(137, 255, 255, 0.86) 0%, rgba(179, 228, 255, 0.58) 45%, rgba(189, 208, 255, 0.28) 60%, rgba(255, 0, 126, 0) 80%),
     radial-gradient(ellipse 170% 130% at 48% 46%, #bf005f 0%, #a10053 50%, #8a0048 100%);
   background-size: cover;
   background-position: center center;
