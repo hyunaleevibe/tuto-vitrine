@@ -56,28 +56,12 @@ body {
 
 .bg-ellipse-a {
   left: 50%;
-<<<<<<< ours
-<<<<<<< ours
-  transform: translateX(calc(-100% + 52px));
-=======
-  transform: translateX(calc(-100% + 110px)) rotate(90deg);
->>>>>>> theirs
-=======
-  transform: translateX(calc(-100% + 46px)) rotate(90deg);
->>>>>>> theirs
+  transform: translateX(calc(-100% + 52px)) scaleX(-1);
 }
 
 .bg-ellipse-b {
   left: 50%;
-<<<<<<< ours
-<<<<<<< ours
   transform: translateX(-52px);
-=======
-  transform: translateX(-110px) rotate(90deg);
->>>>>>> theirs
-=======
-  transform: translateX(-46px) rotate(90deg);
->>>>>>> theirs
 }
 
 .overlay {
