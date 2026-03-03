@@ -47,7 +47,7 @@ body {
 .hero-bg::after {
   content: '';
   position: absolute;
-  top: -4vh;
+  top: 6vh;
   width: min(39vw, 560px);
   height: min(82vh, 980px);
   background-image: url('https://www.figma.com/api/mcp/asset/7af5c8a3-9316-47e9-8fbd-248a280bcfd7');
@@ -70,7 +70,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background: linear-gradient(180deg, rgba(10, 4, 10, calc(var(--overlay-alpha) * 0.08)), rgba(7, 3, 8, calc(var(--overlay-alpha) * 0.16)));
+  background: linear-gradient(180deg, rgba(10, 4, 10, 0) 0%, rgba(7, 3, 8, var(--overlay-alpha)) 100%);
 }
 
 .center-emblem {
