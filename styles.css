@@ -34,24 +34,43 @@ body {
   position: fixed;
   inset: 0;
   z-index: -3;
-  background:
-    radial-gradient(ellipse 24% 30% at 86% 56%, rgba(194, 255, 255, 0.92) 0%, rgba(149, 248, 255, 0.62) 54%, rgba(255, 0, 126, 0) 67%),
-    radial-gradient(ellipse 56% 44% at 60% 56%, rgba(138, 248, 255, 0.88) 0%, rgba(170, 215, 255, 0.64) 48%, rgba(180, 184, 255, 0.34) 62%, rgba(255, 0, 126, 0) 84%),
-    radial-gradient(ellipse 180% 140% at 52% 50%, #b10059 0%, #a20054 52%, #92004c 100%);
+  background-image: linear-gradient(214deg, rgb(230, 37, 31) 28.321%, rgb(168, 94, 116) 55.159%);
   background-size: cover;
   background-position: center center;
-  transform: scale(1.02);
+  transform: scale(1.01);
   filter: hue-rotate(var(--bg-hue-shift)) saturate(var(--bg-sat)) contrast(var(--bg-contrast));
   transition: filter 120ms linear;
   animation: drift 24s ease-in-out infinite alternate;
+}
+
+.hero-bg::before,
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  top: -4vh;
+  width: min(39vw, 560px);
+  height: min(82vh, 980px);
+  background-image: url('https://www.figma.com/api/mcp/asset/7af5c8a3-9316-47e9-8fbd-248a280bcfd7');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(8.6px);
+  transform-origin: center;
+}
+
+.hero-bg::before {
+  left: 14.7%;
+}
+
+.hero-bg::after {
+  left: 46.8%;
 }
 
 .overlay {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background:
-    linear-gradient(180deg, rgba(15, 7, 16, calc(var(--overlay-alpha) * 0.28)), rgba(10, 6, 14, calc(var(--overlay-alpha) * 0.5)));
+  background: linear-gradient(180deg, rgba(10, 4, 10, calc(var(--overlay-alpha) * 0.08)), rgba(7, 3, 8, calc(var(--overlay-alpha) * 0.16)));
 }
 
 .center-emblem {
