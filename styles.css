@@ -35,9 +35,9 @@ body {
   inset: 0;
   z-index: -3;
   background:
-    radial-gradient(ellipse 18% 22% at 87% 54%, rgba(205, 255, 255, 0.88) 0%, rgba(177, 255, 255, 0.7) 52%, rgba(160, 240, 255, 0.26) 60%, rgba(255, 0, 126, 0) 64%),
-    radial-gradient(ellipse 45% 35% at 58% 54%, rgba(137, 255, 255, 0.86) 0%, rgba(179, 228, 255, 0.58) 45%, rgba(189, 208, 255, 0.28) 60%, rgba(255, 0, 126, 0) 80%),
-    radial-gradient(ellipse 170% 130% at 48% 46%, #bf005f 0%, #a10053 50%, #8a0048 100%);
+    radial-gradient(ellipse 24% 30% at 86% 56%, rgba(194, 255, 255, 0.92) 0%, rgba(149, 248, 255, 0.62) 54%, rgba(255, 0, 126, 0) 67%),
+    radial-gradient(ellipse 56% 44% at 60% 56%, rgba(138, 248, 255, 0.88) 0%, rgba(170, 215, 255, 0.64) 48%, rgba(180, 184, 255, 0.34) 62%, rgba(255, 0, 126, 0) 84%),
+    radial-gradient(ellipse 180% 140% at 52% 50%, #b10059 0%, #a20054 52%, #92004c 100%);
   background-size: cover;
   background-position: center center;
   transform: scale(1.02);
@@ -51,7 +51,7 @@ body {
   inset: 0;
   z-index: -2;
   background:
-    linear-gradient(135deg, rgba(3, 4, 8, var(--overlay-alpha)), rgba(9, 2, 14, calc(var(--overlay-alpha) + 0.08)));
+    linear-gradient(180deg, rgba(15, 7, 16, calc(var(--overlay-alpha) * 0.28)), rgba(10, 6, 14, calc(var(--overlay-alpha) * 0.5)));
 }
 
 .center-emblem {
