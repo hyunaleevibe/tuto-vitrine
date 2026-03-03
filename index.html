@@ -110,7 +110,25 @@
         </article>
       </div>
     </section>
-    <section id="artists" class="anchor"></section>
+    <section id="artists" class="artists-section">
+      <div class="artists-head reveal-item">
+        <p class="section-kicker" data-i18n="artistsKicker">Lineup</p>
+        <h2 data-i18n="artistsTitle">Artists</h2>
+      </div>
+      <div class="artists-orbit-wrap reveal-item">
+        <svg class="artists-orbit-svg" viewBox="0 0 680 680" aria-hidden="true">
+          <defs>
+            <path id="artistsOrbitPath" d="M340,340 m-248,0 a248,248 0 1,1 496,0 a248,248 0 1,1 -496,0" />
+          </defs>
+          <text class="artists-orbit-text">
+            <textPath href="#artistsOrbitPath" startOffset="50%" text-anchor="middle" data-i18n="artistsOrbit">
+              Leila Azadi • Noa Weiss • Kenji Mori • Amina El Idrissi • Tomas Kral • Ines Vogel • Min-ji Han • Luca Ferraro • Safia Rahman • Otto Lind • Yara Nasser • Diego Varela
+            </textPath>
+          </text>
+        </svg>
+        <p class="artists-center-label" data-i18n="artistsCenter">International Artists</p>
+      </div>
+    </section>
     <section id="reservation" class="anchor"></section>
     <section id="contact" class="anchor"></section>
 
@@ -133,6 +151,11 @@
           eventCardOne: "Pink Ritual",
           eventCardTwo: "Midnight Domestic",
           eventCardThree: "Pastoral Future",
+          artistsKicker: "Lineup",
+          artistsTitle: "Artists",
+          artistsCenter: "International Artists",
+          artistsOrbit:
+            "Leila Azadi • Noa Weiss • Kenji Mori • Amina El Idrissi • Tomas Kral • Ines Vogel • Min-ji Han • Luca Ferraro • Safia Rahman • Otto Lind • Yara Nasser • Diego Varela",
         },
         fr: {
           menuCurrentEvent: "Exposition en cours",
@@ -151,6 +174,11 @@
           eventCardOne: "Rituel Rose",
           eventCardTwo: "Domestique Minuit",
           eventCardThree: "Futur Pastoral",
+          artistsKicker: "Selection",
+          artistsTitle: "Artistes",
+          artistsCenter: "Artistes Internationaux",
+          artistsOrbit:
+            "Leila Azadi • Noa Weiss • Kenji Mori • Amina El Idrissi • Tomas Kral • Ines Vogel • Min-ji Han • Luca Ferraro • Safia Rahman • Otto Lind • Yara Nasser • Diego Varela",
         },
         de: {
           menuCurrentEvent: "Aktuelle Ausstellung",
@@ -169,6 +197,11 @@
           eventCardOne: "Rosa Ritual",
           eventCardTwo: "Mitternacht Zuhause",
           eventCardThree: "Pastorale Zukunft",
+          artistsKicker: "Lineup",
+          artistsTitle: "Kuenstler",
+          artistsCenter: "Internationale Kuenstler",
+          artistsOrbit:
+            "Leila Azadi • Noa Weiss • Kenji Mori • Amina El Idrissi • Tomas Kral • Ines Vogel • Min-ji Han • Luca Ferraro • Safia Rahman • Otto Lind • Yara Nasser • Diego Varela",
         },
       };
 
