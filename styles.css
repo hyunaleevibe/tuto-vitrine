@@ -47,8 +47,8 @@ body {
 .bg-ellipse {
   position: absolute;
   top: -4%;
-  width: min(71.3vw, 1027px);
-  height: min(54vh, 553px);
+  width: min(38.4vw, 553px);
+  height: min(100vh, 1027px);
   object-fit: cover;
   filter: blur(8.6px);
   transform-origin: center;
@@ -56,12 +56,28 @@ body {
 
 .bg-ellipse-a {
   left: 50%;
-  transform: translateX(calc(-100% + 72px)) rotate(90deg);
+<<<<<<< ours
+<<<<<<< ours
+  transform: translateX(calc(-100% + 52px));
+=======
+  transform: translateX(calc(-100% + 110px)) rotate(90deg);
+>>>>>>> theirs
+=======
+  transform: translateX(calc(-100% + 46px)) rotate(90deg);
+>>>>>>> theirs
 }
 
 .bg-ellipse-b {
   left: 50%;
-  transform: translateX(-72px) rotate(90deg);
+<<<<<<< ours
+<<<<<<< ours
+  transform: translateX(-52px);
+=======
+  transform: translateX(-110px) rotate(90deg);
+>>>>>>> theirs
+=======
+  transform: translateX(-46px) rotate(90deg);
+>>>>>>> theirs
 }
 
 .overlay {
