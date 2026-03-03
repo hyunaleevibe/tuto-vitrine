@@ -34,7 +34,8 @@ body {
   position: fixed;
   inset: 0;
   z-index: -3;
-  background-image: linear-gradient(214deg, rgb(230, 37, 31) 28.321%, rgb(168, 94, 116) 55.159%);
+  background-color: rgb(168, 94, 116);
+  background-image: linear-gradient(180deg, rgba(230, 37, 31, 0.95) 0%, rgba(168, 94, 116, 0) 100%);
   background-size: cover;
   background-position: center center;
   transform: scale(1.01);
