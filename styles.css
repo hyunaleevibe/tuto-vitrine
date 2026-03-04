@@ -538,6 +538,105 @@ h1 {
   white-space: nowrap;
 }
 
+.reservation-section {
+  position: relative;
+  z-index: 4;
+  padding: clamp(2.4rem, 6vw, 4.8rem) clamp(0.45rem, 2vw, 1.2rem) clamp(3rem, 7vw, 5.6rem);
+}
+
+.reservation-panel {
+  max-width: 1320px;
+  margin: 0 auto;
+  background: linear-gradient(145deg, rgba(21, 20, 28, 0.92), rgba(13, 12, 18, 0.92));
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: clamp(1rem, 3vw, 2.6rem);
+  padding: clamp(1rem, 3vw, 2.4rem);
+}
+
+.reservation-panel h2 {
+  margin: 0;
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(1.8rem, 4.6vw, 3.5rem);
+  line-height: 1.06;
+  font-weight: 400;
+}
+
+.reservation-intro {
+  margin: 0.9rem 0 0;
+  max-width: 48ch;
+  line-height: 1.65;
+  color: rgba(246, 243, 239, 0.9);
+}
+
+.reservation-meta {
+  margin-top: 1rem;
+}
+
+.reservation-meta-title {
+  margin: 0 0 0.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+}
+
+.reservation-meta-text {
+  margin: 0;
+  color: rgba(246, 243, 239, 0.92);
+}
+
+.reservation-booking {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: clamp(0.9rem, 2vw, 1.4rem);
+}
+
+.slot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.6rem 0 1rem;
+}
+
+.slot-chip {
+  margin: 0;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  padding: 0.35rem 0.52rem;
+  font-size: 0.78rem;
+}
+
+.reservation-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.reserve-btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.74rem;
+  padding: 0.58rem 0.74rem;
+}
+
+.reserve-btn-primary {
+  background: #f6f3ef;
+  color: #121113;
+}
+
+.reserve-btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #f6f3ef;
+}
+
+.reservation-note {
+  margin: 0.85rem 0 0;
+  font-size: 0.78rem;
+  color: rgba(246, 243, 239, 0.78);
+}
+
 @media (max-width: 800px) {
   .topbar {
     align-items: flex-start;
@@ -574,6 +673,10 @@ h1 {
 
   .artists-orbit-wrap {
     width: min(620px, 96vw);
+  }
+
+  .reservation-panel {
+    grid-template-columns: 1fr;
   }
 }
 
