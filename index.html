@@ -145,27 +145,31 @@
           <p class="section-kicker" data-i18n="reservationKicker">Visit</p>
           <h2 data-i18n="reservationTitle">Reservation</h2>
           <p class="reservation-intro" data-i18n="reservationIntro">
-            Reserve your visit for guided tours, private previews, and opening nights at Parallel Archive in Paris.
+            Choose an event below and request an individual reservation with your preferred date and time.
           </p>
-          <div class="reservation-meta">
-            <p class="reservation-meta-title" data-i18n="reservationVisitTitle">Location</p>
-            <p class="reservation-meta-text" data-i18n="reservationVisitText">11th arrondissement, Paris</p>
-          </div>
         </div>
 
-        <div class="reservation-booking">
-          <p class="reservation-meta-title" data-i18n="reservationSlotTitle">Available Slots</p>
-          <div class="slot-grid">
-            <p class="slot-chip" data-i18n="reservationSlotOne">Thu 19:00</p>
-            <p class="slot-chip" data-i18n="reservationSlotTwo">Fri 21:00</p>
-            <p class="slot-chip" data-i18n="reservationSlotThree">Sat 16:30</p>
-          </div>
-          <div class="reservation-actions">
-            <a class="reserve-btn reserve-btn-primary" href="#contact" data-i18n="reservationBtnPrimary">Book Request</a>
-            <a class="reserve-btn reserve-btn-secondary" href="#contact" data-i18n="reservationBtnSecondary">Group Reservation</a>
-          </div>
-          <p class="reservation-note" data-i18n="reservationNote">Responses are sent within 24 hours.</p>
+        <div class="reservation-events">
+          <article class="reservation-event-card">
+            <video class="reservation-thumb" src="event1.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Pink Ritual event thumbnail"></video>
+            <p class="reservation-event-title" data-i18n="reservationEventOneTitle">Pink Ritual</p>
+            <p class="reservation-event-time" data-i18n="reservationEventOneTime">Thu 19:00</p>
+            <a class="reserve-btn reserve-btn-primary" href="#contact" data-i18n="reservationEventOneBtn">Reserve Pink Ritual</a>
+          </article>
+          <article class="reservation-event-card">
+            <img class="reservation-thumb" src="event2.JPG" alt="Midnight Domestic event thumbnail" loading="lazy" />
+            <p class="reservation-event-title" data-i18n="reservationEventTwoTitle">Midnight Domestic</p>
+            <p class="reservation-event-time" data-i18n="reservationEventTwoTime">Fri 21:00</p>
+            <a class="reserve-btn reserve-btn-primary" href="#contact" data-i18n="reservationEventTwoBtn">Reserve Midnight Domestic</a>
+          </article>
+          <article class="reservation-event-card">
+            <img class="reservation-thumb" src="event3.jpeg" alt="Pastoral Future event thumbnail" loading="lazy" />
+            <p class="reservation-event-title" data-i18n="reservationEventThreeTitle">Pastoral Future</p>
+            <p class="reservation-event-time" data-i18n="reservationEventThreeTime">Sat 16:30</p>
+            <a class="reserve-btn reserve-btn-primary" href="#contact" data-i18n="reservationEventThreeBtn">Reserve Pastoral Future</a>
+          </article>
         </div>
+        <p class="reservation-note" data-i18n="reservationNote">Responses are sent within 24 hours.</p>
       </div>
     </section>
     <section id="contact" class="anchor"></section>
@@ -199,15 +203,16 @@
           reservationKicker: "Visit",
           reservationTitle: "Reservation",
           reservationIntro:
-            "Reserve your visit for guided tours, private previews, and opening nights at Parallel Archive in Paris.",
-          reservationVisitTitle: "Location",
-          reservationVisitText: "11th arrondissement, Paris",
-          reservationSlotTitle: "Available Slots",
-          reservationSlotOne: "Thu 19:00",
-          reservationSlotTwo: "Fri 21:00",
-          reservationSlotThree: "Sat 16:30",
-          reservationBtnPrimary: "Book Request",
-          reservationBtnSecondary: "Group Reservation",
+            "Choose an event below and request an individual reservation with your preferred date and time.",
+          reservationEventOneTitle: "Pink Ritual",
+          reservationEventOneTime: "Thu 19:00",
+          reservationEventOneBtn: "Reserve Pink Ritual",
+          reservationEventTwoTitle: "Midnight Domestic",
+          reservationEventTwoTime: "Fri 21:00",
+          reservationEventTwoBtn: "Reserve Midnight Domestic",
+          reservationEventThreeTitle: "Pastoral Future",
+          reservationEventThreeTime: "Sat 16:30",
+          reservationEventThreeBtn: "Reserve Pastoral Future",
           reservationNote: "Responses are sent within 24 hours.",
         },
         fr: {
@@ -237,15 +242,16 @@
           reservationKicker: "Visite",
           reservationTitle: "Reservation",
           reservationIntro:
-            "Reservez votre visite pour les tours guides, les previews privees et les soirees d'ouverture de Parallel Archive a Paris.",
-          reservationVisitTitle: "Adresse",
-          reservationVisitText: "11e arrondissement, Paris",
-          reservationSlotTitle: "Creneaux Disponibles",
-          reservationSlotOne: "Jeu 19:00",
-          reservationSlotTwo: "Ven 21:00",
-          reservationSlotThree: "Sam 16:30",
-          reservationBtnPrimary: "Demande de Reservation",
-          reservationBtnSecondary: "Reservation de Groupe",
+            "Choisissez un evenement ci-dessous et envoyez une demande de reservation individuelle avec votre horaire prefere.",
+          reservationEventOneTitle: "Rituel Rose",
+          reservationEventOneTime: "Jeu 19:00",
+          reservationEventOneBtn: "Reserver Rituel Rose",
+          reservationEventTwoTitle: "Domestique Minuit",
+          reservationEventTwoTime: "Ven 21:00",
+          reservationEventTwoBtn: "Reserver Domestique Minuit",
+          reservationEventThreeTitle: "Futur Pastoral",
+          reservationEventThreeTime: "Sam 16:30",
+          reservationEventThreeBtn: "Reserver Futur Pastoral",
           reservationNote: "Reponse sous 24 heures.",
         },
         de: {
@@ -275,15 +281,16 @@
           reservationKicker: "Besuch",
           reservationTitle: "Reservierung",
           reservationIntro:
-            "Reservieren Sie Ihren Besuch fuer Fuehrungen, private Previews und Opening Nights im Parallel Archive in Paris.",
-          reservationVisitTitle: "Standort",
-          reservationVisitText: "11. Arrondissement, Paris",
-          reservationSlotTitle: "Verfuegbare Zeiten",
-          reservationSlotOne: "Do 19:00",
-          reservationSlotTwo: "Fr 21:00",
-          reservationSlotThree: "Sa 16:30",
-          reservationBtnPrimary: "Buchungsanfrage",
-          reservationBtnSecondary: "Gruppenreservierung",
+            "Waehlen Sie unten ein Event und senden Sie eine individuelle Reservierungsanfrage mit Ihrer bevorzugten Uhrzeit.",
+          reservationEventOneTitle: "Rosa Ritual",
+          reservationEventOneTime: "Do 19:00",
+          reservationEventOneBtn: "Rosa Ritual Reservieren",
+          reservationEventTwoTitle: "Mitternacht Zuhause",
+          reservationEventTwoTime: "Fr 21:00",
+          reservationEventTwoBtn: "Mitternacht Zuhause Reservieren",
+          reservationEventThreeTitle: "Pastorale Zukunft",
+          reservationEventThreeTime: "Sa 16:30",
+          reservationEventThreeBtn: "Pastorale Zukunft Reservieren",
           reservationNote: "Antwort innerhalb von 24 Stunden.",
         },
       };
