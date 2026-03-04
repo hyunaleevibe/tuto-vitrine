@@ -618,44 +618,42 @@ h1 {
 .reservation-fixed-art {
   width: 100%;
   aspect-ratio: 4 / 5;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  background:
-    radial-gradient(circle at 80% 20%, rgba(167, 250, 255, 0.2), transparent 42%),
-    linear-gradient(150deg, rgba(219, 54, 111, 0.9), rgba(132, 76, 117, 0.9));
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  background: #ffffff;
   display: grid;
   place-items: center;
   text-align: center;
-  padding: 0.8rem;
+  padding: 0.58rem;
 }
 
 .reservation-fixed-art-top,
 .reservation-fixed-art-main,
 .reservation-fixed-art-bottom {
   margin: 0;
-  color: #f6f3ef;
+  color: #101010;
 }
 
 .reservation-fixed-art-top {
   align-self: start;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.62rem;
-  opacity: 0.85;
+  letter-spacing: 0.12em;
+  font-size: 0.56rem;
+  opacity: 0.82;
 }
 
 .reservation-fixed-art-main {
   font-family: 'Instrument Serif', serif;
-  font-size: clamp(1.1rem, 2.6vw, 1.8rem);
-  line-height: 1.08;
-  max-width: 12ch;
+  font-size: clamp(0.96rem, 2.1vw, 1.28rem);
+  line-height: 1.04;
+  max-width: 11ch;
 }
 
 .reservation-fixed-art-bottom {
   align-self: end;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.62rem;
-  opacity: 0.85;
+  letter-spacing: 0.12em;
+  font-size: 0.56rem;
+  opacity: 0.82;
 }
 
 .reservation-event-title {
