@@ -3,138 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lueur Botanique | Clean Beauty Rituals</title>
+    <title>Aurelia Skin Lab | Future Beauty</title>
     <meta
       name="description"
-      content="Lueur Botanique is a modern beauty brand creating clean, botanical skincare for hydrated, radiant skin."
+      content="Aurelia Skin Lab creates high-performance beauty essentials powered by biotech actives and botanical calm."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="ambient ambient-a" aria-hidden="true"></div>
-    <div class="ambient ambient-b" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
 
-    <header class="site-header">
-      <a class="brand" href="#">Lueur Botanique</a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#products">Products</a>
-        <a href="#ingredients">Ingredients</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
+    <header class="header">
+      <a class="logo" href="#">Aurelia Skin Lab</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#manifesto">Manifesto</a>
+        <a href="#lineup">Lineup</a>
+        <a href="#results">Results</a>
+        <a href="#join">Join</a>
       </nav>
-      <a class="btn btn-outline" href="#shop">Shop Now</a>
+      <a class="pill" href="#lineup">Shop</a>
     </header>
 
     <main>
-      <section class="hero" id="shop">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Paris-born clean skincare</p>
-          <h1>Beauty that glows with your skin, not over it.</h1>
-          <p>
-            Discover high-performance botanical rituals crafted for hydration, barrier care, and a luminous finish.
+      <section class="hero">
+        <div class="hero-left reveal">
+          <p class="kicker">Performance Beauty</p>
+          <h1>Skin intelligence for daily glow control.</h1>
+          <p class="lead">
+            A next-generation beauty brand blending biotech precision and soft botanicals for clear, luminous, resilient skin.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-solid" href="#products">Explore Rituals</a>
-            <a class="btn btn-ghost" href="#ingredients">Our Philosophy</a>
+          <div class="hero-cta">
+            <a class="btn btn-main" href="#lineup">Discover Products</a>
+            <a class="btn btn-quiet" href="#manifesto">How It Works</a>
           </div>
         </div>
-        <article class="hero-card reveal delay-1">
-          <p class="card-kicker">Signature Set</p>
-          <h2>Morning Dew Trio</h2>
-          <p>Cleanser, peptide serum, and cloud cream designed for an effortless daily glow.</p>
+
+        <aside class="hero-right reveal delay-1">
+          <div class="chip">New Drop</div>
+          <h2>Prism Repair Kit</h2>
+          <p>Three formulas designed to reset texture, lock hydration, and refine tone in 21 days.</p>
           <ul>
-            <li>Clinically tested hydration +38%</li>
-            <li>Vegan and cruelty-free formulas</li>
-            <li>Refill-ready glass packaging</li>
+            <li>Barrier Index +41% in panel tests</li>
+            <li>Fragrance-free and vegan</li>
+            <li>Refill packs available</li>
           </ul>
+        </aside>
+      </section>
+
+      <section id="manifesto" class="manifesto">
+        <article class="panel reveal">
+          <p class="kicker">Brand Manifesto</p>
+          <h2>Clean formulas are the minimum. Results are the standard.</h2>
+          <p>
+            We formulate around measurable outcomes: calmer redness, smoother texture, stronger barrier. Every active is
+            chosen for function, then balanced for comfort and everyday wear.
+          </p>
+        </article>
+        <article class="stats reveal delay-1">
+          <div>
+            <strong>92%</strong>
+            <span>felt visibly smoother skin by week 2</span>
+          </div>
+          <div>
+            <strong>0%</strong>
+            <span>silicones, parabens, synthetic perfume</span>
+          </div>
+          <div>
+            <strong>3 mins</strong>
+            <span>average full routine, morning or night</span>
+          </div>
         </article>
       </section>
 
-      <section class="products" id="products">
-        <div class="section-head reveal">
-          <p class="eyebrow">Bestsellers</p>
-          <h2>Three essentials for modern skin</h2>
-        </div>
-        <div class="product-grid">
-          <article class="product-card reveal">
-            <p class="product-index">01</p>
-            <h3>Velvet Enzyme Cleanser</h3>
-            <p>Melt-away balm with papaya enzymes and oat lipids for gentle daily renewal.</p>
-            <span>$34</span>
+      <section id="lineup" class="lineup">
+        <header class="section-head reveal">
+          <p class="kicker">Core Lineup</p>
+          <h2>Build your beauty routine in three steps</h2>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <p class="index">01</p>
+            <h3>Pulse Jelly Cleanser</h3>
+            <p>pH-balanced gel cleanser with green tea enzymes and amino surfactants.</p>
+            <span>$32</span>
           </article>
-          <article class="product-card reveal delay-1">
-            <p class="product-index">02</p>
-            <h3>Rose Quartz Peptide Serum</h3>
-            <p>Silky serum with tripeptides and fermented rose water to smooth and brighten.</p>
-            <span>$52</span>
+
+          <article class="card reveal delay-1">
+            <p class="index">02</p>
+            <h3>Signal C Serum</h3>
+            <p>Stabilized vitamin C + niacinamide blend to brighten dull, uneven skin.</p>
+            <span>$49</span>
           </article>
-          <article class="product-card reveal delay-2">
-            <p class="product-index">03</p>
-            <h3>Cloud Barrier Cream</h3>
-            <p>Weightless moisturizer with ceramides and snow mushroom for long wear comfort.</p>
-            <span>$46</span>
+
+          <article class="card reveal delay-2">
+            <p class="index">03</p>
+            <h3>Soft Shield Cream</h3>
+            <p>Lightweight ceramide cream with ectoin for day-long moisture retention.</p>
+            <span>$44</span>
           </article>
         </div>
       </section>
 
-      <section class="ingredients" id="ingredients">
-        <div class="ingredients-grid">
-          <article class="ingredients-copy reveal">
-            <p class="eyebrow">Ingredient Promise</p>
-            <h2>Formulated with intention, sourced with care</h2>
-            <p>
-              Every formula blends advanced actives with botanicals from small regenerative farms. No parabens,
-              mineral oils, or synthetic fragrances.
-            </p>
-          </article>
-          <div class="ingredient-points reveal delay-1">
-            <p><strong>Camellia Seed Oil</strong> supports elasticity and softens texture.</p>
-            <p><strong>Niacinamide 5%</strong> visibly balances tone and pores.</p>
-            <p><strong>Snow Mushroom</strong> helps lock in moisture across the day.</p>
-          </div>
-        </div>
-      </section>
+      <section id="results" class="results">
+        <header class="section-head reveal">
+          <p class="kicker">Real Feedback</p>
+          <h2>What people notice first</h2>
+        </header>
 
-      <section class="reviews" id="reviews">
-        <div class="section-head reveal">
-          <p class="eyebrow">Community</p>
-          <h2>Loved by estheticians and beauty editors</h2>
-        </div>
-        <div class="review-grid">
-          <blockquote class="review-card reveal">
-            "My clients keep asking what changed in my prep routine. The glow is instant and natural."
-            <cite>- Lea Martin, Makeup Artist</cite>
+        <div class="quotes">
+          <blockquote class="quote reveal">
+            "My base makeup sits better and I use less of it. Skin looks even before foundation."
+            <cite>- Mina, Beauty Creator</cite>
           </blockquote>
-          <blockquote class="review-card reveal delay-1">
-            "The texture story is incredible. Lightweight layers, serious hydration, zero heaviness."
-            <cite>- The Skin Notebook</cite>
+          <blockquote class="quote reveal delay-1">
+            "The formulas feel technical but never harsh. My skin looks calmer week after week."
+            <cite>- Claire, Product Designer</cite>
           </blockquote>
         </div>
       </section>
 
-      <section class="contact" id="contact">
-        <div class="contact-panel reveal">
-          <p class="eyebrow">Stay in Touch</p>
-          <h2>Get 10% off your first ritual</h2>
-          <p>Join our newsletter for launch drops, expert tips, and seasonal skincare edits.</p>
-          <form class="newsletter" action="#" method="post">
-            <label for="email" class="sr-only">Email address</label>
-            <input id="email" type="email" name="email" placeholder="you@example.com" required />
-            <button type="submit" class="btn btn-solid">Subscribe</button>
+      <section id="join" class="join">
+        <article class="join-panel reveal">
+          <p class="kicker">Join the List</p>
+          <h2>Get first access to launches and limited sets</h2>
+          <form class="signup" action="#" method="post">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@email.com" required />
+            <button class="btn btn-main" type="submit">Subscribe</button>
           </form>
-        </div>
+        </article>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>© 2026 Lueur Botanique</p>
-      <p>Clean Beauty Rituals · Paris</p>
+    <footer class="footer">
+      <p>© 2026 Aurelia Skin Lab</p>
+      <p>Future Beauty Essentials</p>
     </footer>
   </body>
 </html>
