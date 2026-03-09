@@ -3,393 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parallel Archive | Paris Art Gallery Museum</title>
+    <title>Lueur Botanique | Clean Beauty Rituals</title>
     <meta
       name="description"
-      content="Parallel Archive is a Paris-based art gallery museum championing young independent artists from Paris, Berlin, and around the world."
+      content="Lueur Botanique is a modern beauty brand creating clean, botanical skincare for hydrated, radiant skin."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="hero-bg" role="img" aria-label="Contemporary art installation background">
-      <img class="bg-ellipse bg-ellipse-a" src="https://www.figma.com/api/mcp/asset/7af5c8a3-9316-47e9-8fbd-248a280bcfd7" alt="" />
-      <img class="bg-ellipse bg-ellipse-b" src="https://www.figma.com/api/mcp/asset/7af5c8a3-9316-47e9-8fbd-248a280bcfd7" alt="" />
-    </div>
-    <div class="overlay"></div>
-    <div class="center-emblem" aria-hidden="true">
-      <span class="center-emblem-mark"></span>
-    </div>
+    <div class="ambient ambient-a" aria-hidden="true"></div>
+    <div class="ambient ambient-b" aria-hidden="true"></div>
 
-    <header class="topbar">
-      <div class="topbar-left">
-        <a class="brand" href="#" aria-label="Parallel Archive home">
-          <span class="brand-mark" aria-hidden="true"></span>
-          <span class="brand-name">Parallel Archive</span>
-        </a>
-        <nav class="menu" aria-label="Main Navigation">
-          <a href="#current-event" data-i18n="menuCurrentEvent">Current Event</a>
-          <a href="#artists" data-i18n="menuArtists">Artists</a>
-          <a href="#reservation" data-i18n="menuReservation">Reservation</a>
-          <a href="#contact" data-i18n="menuContact">Contact</a>
-        </nav>
-      </div>
-
-      <div class="language-switcher" aria-label="Language selector">
-        <button class="lang-btn is-active" data-lang="en" type="button">EN</button>
-        <button class="lang-btn" data-lang="fr" type="button">FR</button>
-        <button class="lang-btn" data-lang="de" type="button">DE</button>
-      </div>
+    <header class="site-header">
+      <a class="brand" href="#">Lueur Botanique</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#products">Products</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-outline" href="#shop">Shop Now</a>
     </header>
 
-    <main class="hero-content">
-      <div class="circle-board" aria-label="Gallery highlights">
-        <article class="info-circle info-circle-large">
-          <div class="orbit-text-wrap">
-            <svg class="orbit-svg" viewBox="0 0 320 320" aria-hidden="true">
-              <defs>
-                <path id="aboutOrbitPath" d="M160,160 m-118,0 a118,118 0 1,1 236,0 a118,118 0 1,1 -236,0" />
-              </defs>
-              <text class="orbit-text">
-                <textPath id="aboutOrbitText" href="#aboutOrbitPath" startOffset="50%" text-anchor="middle" data-i18n="aboutOrbit">
-                  Young independent artists from Paris and Berlin.
-                </textPath>
-              </text>
-            </svg>
-            <p class="circle-label circle-center-label" data-i18n="aboutLabel">About Gallery</p>
+    <main>
+      <section class="hero" id="shop">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Paris-born clean skincare</p>
+          <h1>Beauty that glows with your skin, not over it.</h1>
+          <p>
+            Discover high-performance botanical rituals crafted for hydration, barrier care, and a luminous finish.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#products">Explore Rituals</a>
+            <a class="btn btn-ghost" href="#ingredients">Our Philosophy</a>
           </div>
+        </div>
+        <article class="hero-card reveal delay-1">
+          <p class="card-kicker">Signature Set</p>
+          <h2>Morning Dew Trio</h2>
+          <p>Cleanser, peptide serum, and cloud cream designed for an effortless daily glow.</p>
+          <ul>
+            <li>Clinically tested hydration +38%</li>
+            <li>Vegan and cruelty-free formulas</li>
+            <li>Refill-ready glass packaging</li>
+          </ul>
         </article>
-        <article class="info-circle info-circle-small">
-          <div class="orbit-text-wrap">
-            <svg class="orbit-svg" viewBox="0 0 320 320" aria-hidden="true">
-              <defs>
-                <path id="eventOrbitPath" d="M160,160 m-118,0 a118,118 0 1,1 236,0 a118,118 0 1,1 -236,0" />
-              </defs>
-              <text class="orbit-text">
-                <textPath id="eventOrbitText" href="#eventOrbitPath" startOffset="50%" text-anchor="middle" data-i18n="eventOrbit">
-                  Soft Voltage: new media works in rotation.
-                </textPath>
-              </text>
-            </svg>
-            <p class="circle-label circle-center-label" data-i18n="eventLabel">Current Event</p>
-          </div>
-        </article>
-      </div>
+      </section>
 
-      <div class="intro-copy">
-        <p class="eyebrow" data-i18n="eyebrow">Paris Art Gallery Museum</p>
-        <h1 data-i18n="title">Parallel Archive</h1>
-        <p class="lead" data-i18n="lead">
-          A playful museum for independent voices from Paris, Berlin, and beyond.
-        </p>
-      </div>
+      <section class="products" id="products">
+        <div class="section-head reveal">
+          <p class="eyebrow">Bestsellers</p>
+          <h2>Three essentials for modern skin</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <p class="product-index">01</p>
+            <h3>Velvet Enzyme Cleanser</h3>
+            <p>Melt-away balm with papaya enzymes and oat lipids for gentle daily renewal.</p>
+            <span>$34</span>
+          </article>
+          <article class="product-card reveal delay-1">
+            <p class="product-index">02</p>
+            <h3>Rose Quartz Peptide Serum</h3>
+            <p>Silky serum with tripeptides and fermented rose water to smooth and brighten.</p>
+            <span>$52</span>
+          </article>
+          <article class="product-card reveal delay-2">
+            <p class="product-index">03</p>
+            <h3>Cloud Barrier Cream</h3>
+            <p>Weightless moisturizer with ceramides and snow mushroom for long wear comfort.</p>
+            <span>$46</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="ingredients" id="ingredients">
+        <div class="ingredients-grid">
+          <article class="ingredients-copy reveal">
+            <p class="eyebrow">Ingredient Promise</p>
+            <h2>Formulated with intention, sourced with care</h2>
+            <p>
+              Every formula blends advanced actives with botanicals from small regenerative farms. No parabens,
+              mineral oils, or synthetic fragrances.
+            </p>
+          </article>
+          <div class="ingredient-points reveal delay-1">
+            <p><strong>Camellia Seed Oil</strong> supports elasticity and softens texture.</p>
+            <p><strong>Niacinamide 5%</strong> visibly balances tone and pores.</p>
+            <p><strong>Snow Mushroom</strong> helps lock in moisture across the day.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="section-head reveal">
+          <p class="eyebrow">Community</p>
+          <h2>Loved by estheticians and beauty editors</h2>
+        </div>
+        <div class="review-grid">
+          <blockquote class="review-card reveal">
+            "My clients keep asking what changed in my prep routine. The glow is instant and natural."
+            <cite>- Lea Martin, Makeup Artist</cite>
+          </blockquote>
+          <blockquote class="review-card reveal delay-1">
+            "The texture story is incredible. Lightweight layers, serious hydration, zero heaviness."
+            <cite>- The Skin Notebook</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-panel reveal">
+          <p class="eyebrow">Stay in Touch</p>
+          <h2>Get 10% off your first ritual</h2>
+          <p>Join our newsletter for launch drops, expert tips, and seasonal skincare edits.</p>
+          <form class="newsletter" action="#" method="post">
+            <label for="email" class="sr-only">Email address</label>
+            <input id="email" type="email" name="email" placeholder="you@example.com" required />
+            <button type="submit" class="btn btn-solid">Subscribe</button>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <section id="current-event" class="current-event-section">
-      <div class="current-event-head reveal-item">
-        <p class="section-kicker" data-i18n="currentEventKicker">Program</p>
-        <h2 data-i18n="currentEventTitle">Current Event</h2>
-      </div>
-      <div class="event-grid">
-        <article class="event-card reveal-item">
-          <video class="event-media" src="event1.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Pink cocktail still life"></video>
-          <p class="event-title" data-i18n="eventCardOne">Pink Ritual</p>
-        </article>
-        <article class="event-card reveal-item">
-          <img src="event2.JPG" alt="Nocturnal interior scene" loading="lazy" />
-          <p class="event-title" data-i18n="eventCardTwo">Midnight Domestic</p>
-        </article>
-        <article class="event-card reveal-item">
-          <img src="event3.jpeg" alt="Surreal fashion outdoors" loading="lazy" />
-          <p class="event-title" data-i18n="eventCardThree">Pastoral Future</p>
-        </article>
-      </div>
-    </section>
-    <section id="artists" class="artists-section">
-      <div class="artists-head reveal-item">
-        <p class="section-kicker" data-i18n="artistsKicker">Lineup</p>
-        <h2 data-i18n="artistsTitle">Artists</h2>
-      </div>
-      <div class="artists-orbit-wrap reveal-item">
-        <svg class="artists-orbit-svg artists-orbit-svg-outer" viewBox="0 0 760 760" aria-hidden="true">
-          <defs>
-            <path id="artistsOrbitPathOuter" d="M380,380 m-318,0 a318,318 0 1,1 636,0 a318,318 0 1,1 -636,0" />
-          </defs>
-          <text class="artists-orbit-text artists-orbit-text-outer">
-            <textPath href="#artistsOrbitPathOuter" startOffset="50%" text-anchor="middle" data-i18n="artistsOrbitOuter">
-              Mara Ionescu • Elias Kwon • Priya Sethi • Hugo Maren • Alina Petrova • Omar Ben Salem • Sofia Hartmann • Niko Del Rio • Chiara Leone • Amadou Keita • Yuki Sano • Nora Haddad
-            </textPath>
-          </text>
-        </svg>
-        <svg class="artists-orbit-svg" viewBox="0 0 680 680" aria-hidden="true">
-          <defs>
-            <path id="artistsOrbitPath" d="M340,340 m-248,0 a248,248 0 1,1 496,0 a248,248 0 1,1 -496,0" />
-          </defs>
-          <text class="artists-orbit-text">
-            <textPath href="#artistsOrbitPath" startOffset="50%" text-anchor="middle" data-i18n="artistsOrbit">
-              Leila Azadi • Noa Weiss • Kenji Mori • Amina El Idrissi • Tomas Kral • Ines Vogel • Min-ji Han • Luca Ferraro • Safia Rahman • Otto Lind • Yara Nasser • Diego Varela
-            </textPath>
-          </text>
-        </svg>
-        <p class="artists-center-label" data-i18n="artistsCenter">International Artists</p>
-      </div>
-    </section>
-    <section id="reservation" class="reservation-section">
-      <div class="reservation-panel reveal-item">
-        <div class="reservation-copy">
-          <p class="section-kicker" data-i18n="reservationKicker">Visit</p>
-          <h2 data-i18n="reservationTitle">Reservation</h2>
-          <p class="reservation-intro" data-i18n="reservationIntro">
-            Choose an event below and request an individual reservation with your preferred date and time.
-          </p>
-        </div>
-
-        <div class="reservation-events">
-          <article class="reservation-event-card">
-            <video class="reservation-thumb" src="event1.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Pink Ritual event thumbnail"></video>
-            <p class="reservation-event-title" data-i18n="reservationEventOneTitle">Pink Ritual</p>
-            <p class="reservation-event-time" data-i18n="reservationEventOneTime">March 2, 2026 - June 30, 2026</p>
-            <a class="reserve-btn reserve-btn-primary" href="#contact" data-i18n="reservationEventOneBtn">Reserve Pink Ritual</a>
-          </article>
-          <article class="reservation-event-card">
-            <img class="reservation-thumb" src="event2.JPG" alt="Midnight Domestic event thumbnail" loading="lazy" />
-            <p class="reservation-event-title" data-i18n="reservationEventTwoTitle">Midnight Domestic</p>
-            <p class="reservation-event-time" data-i18n="reservationEventTwoTime">June 5, 2026 - September 18, 2026</p>
-            <a class="reserve-btn reserve-btn-primary" href="#contact" data-i18n="reservationEventTwoBtn">Reserve Midnight Domestic</a>
-          </article>
-          <article class="reservation-event-card">
-            <img class="reservation-thumb" src="event3.jpeg" alt="Pastoral Future event thumbnail" loading="lazy" />
-            <p class="reservation-event-title" data-i18n="reservationEventThreeTitle">Pastoral Future</p>
-            <p class="reservation-event-time" data-i18n="reservationEventThreeTime">September 25, 2026 - December 20, 2026</p>
-            <a class="reserve-btn reserve-btn-primary" href="#contact" data-i18n="reservationEventThreeBtn">Reserve Pastoral Future</a>
-          </article>
-          <article class="reservation-event-card reservation-event-card-fixed">
-            <div class="reservation-fixed-art" aria-hidden="true">
-              <p class="reservation-fixed-art-top">Parallel Archive</p>
-              <p class="reservation-fixed-art-main" data-i18n="reservationFixedArt">Fixed Exhibition</p>
-              <p class="reservation-fixed-art-bottom">Paris</p>
-            </div>
-            <p class="reservation-event-title" data-i18n="reservationEventFixedTitle">Fixed Exhibition</p>
-            <p class="reservation-event-time" data-i18n="reservationEventFixedTime">January 1, 2026 - December 31, 2026 • Free</p>
-            <a class="reserve-btn reserve-btn-primary" href="#contact" data-i18n="reservationEventFixedBtn">Reserve Free Entry</a>
-          </article>
-        </div>
-        <p class="reservation-note" data-i18n="reservationNote">Responses are sent within 24 hours.</p>
-      </div>
-    </section>
-    <section id="contact" class="anchor"></section>
-
-    <script>
-      const translations = {
-        en: {
-          menuCurrentEvent: "Current Event",
-          menuArtists: "Artists",
-          menuReservation: "Reservation",
-          menuContact: "Contact",
-          eyebrow: "Paris Art Gallery Museum",
-          title: "Parallel Archive",
-          lead: "A playful museum for independent voices from Paris, Berlin, and beyond.",
-          aboutLabel: "About Gallery",
-          aboutOrbit: "Young independent artists from Paris and Berlin.",
-          eventLabel: "Current Event",
-          eventOrbit: "Soft Voltage: new media works in rotation.",
-          currentEventKicker: "Program",
-          currentEventTitle: "Current Event",
-          eventCardOne: "Pink Ritual",
-          eventCardTwo: "Midnight Domestic",
-          eventCardThree: "Pastoral Future",
-          artistsKicker: "Lineup",
-          artistsTitle: "Artists",
-          artistsCenter: "International Artists",
-          artistsOrbit:
-            "Leila Azadi • Noa Weiss • Kenji Mori • Amina El Idrissi • Tomas Kral • Ines Vogel • Min-ji Han • Luca Ferraro • Safia Rahman • Otto Lind • Yara Nasser • Diego Varela",
-          artistsOrbitOuter:
-            "Mara Ionescu • Elias Kwon • Priya Sethi • Hugo Maren • Alina Petrova • Omar Ben Salem • Sofia Hartmann • Niko Del Rio • Chiara Leone • Amadou Keita • Yuki Sano • Nora Haddad",
-          reservationKicker: "Visit",
-          reservationTitle: "Reservation",
-          reservationIntro:
-            "Choose an event below and request an individual reservation with your preferred date and time.",
-          reservationEventOneTitle: "Pink Ritual",
-          reservationEventOneTime: "March 2, 2026 - June 30, 2026",
-          reservationEventOneBtn: "Reserve Pink Ritual",
-          reservationEventTwoTitle: "Midnight Domestic",
-          reservationEventTwoTime: "June 5, 2026 - September 18, 2026",
-          reservationEventTwoBtn: "Reserve Midnight Domestic",
-          reservationEventThreeTitle: "Pastoral Future",
-          reservationEventThreeTime: "September 25, 2026 - December 20, 2026",
-          reservationEventThreeBtn: "Reserve Pastoral Future",
-          reservationFixedArt: "Fixed Exhibition",
-          reservationEventFixedTitle: "Fixed Exhibition",
-          reservationEventFixedTime: "January 1, 2026 - December 31, 2026 • Free",
-          reservationEventFixedBtn: "Reserve Free Entry",
-          reservationNote: "Responses are sent within 24 hours.",
-        },
-        fr: {
-          menuCurrentEvent: "Exposition en cours",
-          menuArtists: "Artistes",
-          menuReservation: "Reservation",
-          menuContact: "Contact",
-          eyebrow: "Musee Galerie d'Art a Paris",
-          title: "Parallel Archive",
-          lead: "Un musee ludique pour les voix independantes de Paris, Berlin et d'ailleurs.",
-          aboutLabel: "A propos de la galerie",
-          aboutOrbit: "Jeunes artistes independants de Paris et Berlin.",
-          eventLabel: "Exposition en cours",
-          eventOrbit: "Soft Voltage: oeuvres new media en rotation.",
-          currentEventKicker: "Programme",
-          currentEventTitle: "Exposition en cours",
-          eventCardOne: "Rituel Rose",
-          eventCardTwo: "Domestique Minuit",
-          eventCardThree: "Futur Pastoral",
-          artistsKicker: "Selection",
-          artistsTitle: "Artistes",
-          artistsCenter: "Artistes Internationaux",
-          artistsOrbit:
-            "Leila Azadi • Noa Weiss • Kenji Mori • Amina El Idrissi • Tomas Kral • Ines Vogel • Min-ji Han • Luca Ferraro • Safia Rahman • Otto Lind • Yara Nasser • Diego Varela",
-          artistsOrbitOuter:
-            "Mara Ionescu • Elias Kwon • Priya Sethi • Hugo Maren • Alina Petrova • Omar Ben Salem • Sofia Hartmann • Niko Del Rio • Chiara Leone • Amadou Keita • Yuki Sano • Nora Haddad",
-          reservationKicker: "Visite",
-          reservationTitle: "Reservation",
-          reservationIntro:
-            "Choisissez un evenement ci-dessous et envoyez une demande de reservation individuelle avec votre horaire prefere.",
-          reservationEventOneTitle: "Rituel Rose",
-          reservationEventOneTime: "2 Mars 2026 - 30 Juin 2026",
-          reservationEventOneBtn: "Reserver Rituel Rose",
-          reservationEventTwoTitle: "Domestique Minuit",
-          reservationEventTwoTime: "5 Juin 2026 - 18 Septembre 2026",
-          reservationEventTwoBtn: "Reserver Domestique Minuit",
-          reservationEventThreeTitle: "Futur Pastoral",
-          reservationEventThreeTime: "25 Septembre 2026 - 20 Decembre 2026",
-          reservationEventThreeBtn: "Reserver Futur Pastoral",
-          reservationFixedArt: "Exposition Permanente",
-          reservationEventFixedTitle: "Exposition Permanente",
-          reservationEventFixedTime: "1 Janvier 2026 - 31 Decembre 2026 • Gratuit",
-          reservationEventFixedBtn: "Reserver Entree Gratuite",
-          reservationNote: "Reponse sous 24 heures.",
-        },
-        de: {
-          menuCurrentEvent: "Aktuelle Ausstellung",
-          menuArtists: "Kuenstler",
-          menuReservation: "Reservierung",
-          menuContact: "Kontakt",
-          eyebrow: "Kunstgalerie-Museum in Paris",
-          title: "Parallel Archive",
-          lead: "Ein spielerisches Museum fuer unabhaengige Stimmen aus Paris, Berlin und darueber hinaus.",
-          aboutLabel: "Ueber die Galerie",
-          aboutOrbit: "Junge unabhaengige Kuenstler aus Paris und Berlin.",
-          eventLabel: "Aktuelle Ausstellung",
-          eventOrbit: "Soft Voltage: rotierende New-Media-Arbeiten.",
-          currentEventKicker: "Programm",
-          currentEventTitle: "Aktuelle Ausstellung",
-          eventCardOne: "Rosa Ritual",
-          eventCardTwo: "Mitternacht Zuhause",
-          eventCardThree: "Pastorale Zukunft",
-          artistsKicker: "Lineup",
-          artistsTitle: "Kuenstler",
-          artistsCenter: "Internationale Kuenstler",
-          artistsOrbit:
-            "Leila Azadi • Noa Weiss • Kenji Mori • Amina El Idrissi • Tomas Kral • Ines Vogel • Min-ji Han • Luca Ferraro • Safia Rahman • Otto Lind • Yara Nasser • Diego Varela",
-          artistsOrbitOuter:
-            "Mara Ionescu • Elias Kwon • Priya Sethi • Hugo Maren • Alina Petrova • Omar Ben Salem • Sofia Hartmann • Niko Del Rio • Chiara Leone • Amadou Keita • Yuki Sano • Nora Haddad",
-          reservationKicker: "Besuch",
-          reservationTitle: "Reservierung",
-          reservationIntro:
-            "Waehlen Sie unten ein Event und senden Sie eine individuelle Reservierungsanfrage mit Ihrer bevorzugten Uhrzeit.",
-          reservationEventOneTitle: "Rosa Ritual",
-          reservationEventOneTime: "2. Maerz 2026 - 30. Juni 2026",
-          reservationEventOneBtn: "Rosa Ritual Reservieren",
-          reservationEventTwoTitle: "Mitternacht Zuhause",
-          reservationEventTwoTime: "5. Juni 2026 - 18. September 2026",
-          reservationEventTwoBtn: "Mitternacht Zuhause Reservieren",
-          reservationEventThreeTitle: "Pastorale Zukunft",
-          reservationEventThreeTime: "25. September 2026 - 20. Dezember 2026",
-          reservationEventThreeBtn: "Pastorale Zukunft Reservieren",
-          reservationFixedArt: "Dauerausstellung",
-          reservationEventFixedTitle: "Dauerausstellung",
-          reservationEventFixedTime: "1. Januar 2026 - 31. Dezember 2026 • Kostenlos",
-          reservationEventFixedBtn: "Kostenlosen Eintritt Reservieren",
-          reservationNote: "Antwort innerhalb von 24 Stunden.",
-        },
-      };
-
-      const langButtons = document.querySelectorAll('.lang-btn');
-      const translatable = document.querySelectorAll('[data-i18n]');
-
-      function setLanguage(lang) {
-        const dict = translations[lang];
-        if (!dict) return;
-
-        translatable.forEach((el) => {
-          const key = el.dataset.i18n;
-          if (dict[key]) el.textContent = dict[key];
-        });
-
-        langButtons.forEach((btn) => {
-          btn.classList.toggle('is-active', btn.dataset.lang === lang);
-        });
-
-        document.documentElement.lang = lang;
-      }
-
-      langButtons.forEach((btn) => {
-        btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
-      });
-
-      const root = document.documentElement;
-      let scrollTicking = false;
-
-      function updateScrollRgb() {
-        const scrollTop = window.scrollY || document.documentElement.scrollTop;
-        const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-        const progress = Math.min(1, scrollTop / maxScroll);
-
-        const hue = -8 + progress * 96;
-        const saturation = 1 + progress * 0.52;
-        const contrast = 1 + progress * 0.3;
-        const overlay = 0.38 + progress * 0.2;
-
-        root.style.setProperty('--bg-hue-shift', `${hue.toFixed(2)}deg`);
-        root.style.setProperty('--bg-sat', saturation.toFixed(3));
-        root.style.setProperty('--bg-contrast', contrast.toFixed(3));
-        root.style.setProperty('--overlay-alpha', overlay.toFixed(3));
-        scrollTicking = false;
-      }
-
-      window.addEventListener(
-        'scroll',
-        () => {
-          if (!scrollTicking) {
-            window.requestAnimationFrame(updateScrollRgb);
-            scrollTicking = true;
-          }
-        },
-        { passive: true }
-      );
-
-      window.addEventListener('resize', updateScrollRgb);
-      updateScrollRgb();
-
-      const revealItems = document.querySelectorAll('.reveal-item');
-      if ('IntersectionObserver' in window) {
-        const revealObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-              }
-            });
-          },
-          { threshold: 0.18 }
-        );
-        revealItems.forEach((item) => revealObserver.observe(item));
-      } else {
-        revealItems.forEach((item) => item.classList.add('is-visible'));
-      }
-    </script>
+    <footer class="site-footer">
+      <p>© 2026 Lueur Botanique</p>
+      <p>Clean Beauty Rituals · Paris</p>
+    </footer>
   </body>
 </html>
